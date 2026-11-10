@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="backdrop" x1="120" y1="80" x2="900" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#17243a"/>
+      <stop offset="0.5" stop-color="#0b1423"/>
+      <stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <radialGradient id="center" cx="0.38" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#243451"/>
+      <stop offset="1" stop-color="#0d1522"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="28" flood-color="#000814" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#backdrop)"/>
+  <circle cx="512" cy="512" r="316" fill="none" stroke="#23d6ee" stroke-opacity="0.12" stroke-width="72" filter="url(#glow)"/>
+
+  <g filter="url(#shadow)" transform="rotate(-90 512 512)">
+    <!-- Every outer subdivision is fully contained by a middle subdivision
+         and one of the five inner parent arcs. Together each ring covers 100%. -->
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#318fe4" stroke-width="86" stroke-dasharray="327.731 1720.587"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#347cdd" stroke-width="86" stroke-dasharray="225.315 1823.003" stroke-dashoffset="-327.731"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#3869d9" stroke-width="86" stroke-dasharray="163.865 1884.453" stroke-dashoffset="-553.046"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#3d55d7" stroke-width="86" stroke-dasharray="143.382 1904.936" stroke-dashoffset="-716.911"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#633dde" stroke-width="86" stroke-dasharray="184.349 1863.970" stroke-dashoffset="-860.294"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#8135d7" stroke-width="86" stroke-dasharray="143.382 1904.936" stroke-dashoffset="-1044.642"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#9c31cd" stroke-width="86" stroke-dasharray="102.416 1945.902" stroke-dashoffset="-1188.025"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#bc30bd" stroke-width="86" stroke-dasharray="133.141 1915.178" stroke-dashoffset="-1290.441"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#d52fa5" stroke-width="86" stroke-dasharray="102.416 1945.902" stroke-dashoffset="-1423.581"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#e63288" stroke-width="86" stroke-dasharray="71.691 1976.627" stroke-dashoffset="-1525.997"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#ee3d65" stroke-width="86" stroke-dasharray="112.658 1935.661" stroke-dashoffset="-1597.688"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#f04b45" stroke-width="86" stroke-dasharray="81.933 1966.386" stroke-dashoffset="-1710.346"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#ee7033" stroke-width="86" stroke-dasharray="51.208 1997.110" stroke-dashoffset="-1792.279"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#e4a62d" stroke-width="86" stroke-dasharray="92.174 1956.144" stroke-dashoffset="-1843.487"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#91cf2d" stroke-width="86" stroke-dasharray="61.450 1986.869" stroke-dashoffset="-1935.661"/>
+    <circle cx="512" cy="512" r="326" fill="none" stroke="#35ca68" stroke-width="86" stroke-dasharray="51.208 1997.110" stroke-dashoffset="-1997.110"/>
+
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#329be5" stroke-width="82" stroke-dasharray="349.848 1107.851"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#3866da" stroke-width="82" stroke-dasharray="262.386 1195.313" stroke-dashoffset="-349.848"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#6740de" stroke-width="82" stroke-dasharray="174.924 1282.775" stroke-dashoffset="-612.234"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#9634d0" stroke-width="82" stroke-dasharray="131.193 1326.506" stroke-dashoffset="-787.157"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#c330b9" stroke-width="82" stroke-dasharray="116.616 1341.083" stroke-dashoffset="-918.350"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#df318f" stroke-width="82" stroke-dasharray="102.039 1355.660" stroke-dashoffset="-1034.966"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#ef4162" stroke-width="82" stroke-dasharray="87.462 1370.237" stroke-dashoffset="-1137.005"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#ef6238" stroke-width="82" stroke-dasharray="87.462 1370.237" stroke-dashoffset="-1224.467"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#e4aa2d" stroke-width="82" stroke-dasharray="87.462 1370.237" stroke-dashoffset="-1311.929"/>
+    <circle cx="512" cy="512" r="232" fill="none" stroke="#48ca58" stroke-width="82" stroke-dasharray="58.308 1399.391" stroke-dashoffset="-1399.391"/>
+
+    <circle cx="512" cy="512" r="142" fill="none" stroke="#348ede" stroke-width="72" stroke-dasharray="374.729 517.483"/>
+    <circle cx="512" cy="512" r="142" fill="none" stroke="#6c3cdb" stroke-width="72" stroke-dasharray="187.365 704.848" stroke-dashoffset="-374.729"/>
+    <circle cx="512" cy="512" r="142" fill="none" stroke="#cf31ae" stroke-width="72" stroke-dasharray="133.832 758.380" stroke-dashoffset="-562.094"/>
+    <circle cx="512" cy="512" r="142" fill="none" stroke="#ef4d47" stroke-width="72" stroke-dasharray="107.065 785.147" stroke-dashoffset="-695.926"/>
+    <circle cx="512" cy="512" r="142" fill="none" stroke="#6fd239" stroke-width="72" stroke-dasharray="89.221 802.991" stroke-dashoffset="-802.991"/>
+  </g>
+
+  <circle cx="512" cy="512" r="88" fill="url(#center)" stroke="#b9f5ff" stroke-opacity="0.18" stroke-width="5"/>
+  <circle cx="512" cy="512" r="396" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="3"/>
+</svg>

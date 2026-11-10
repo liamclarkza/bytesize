@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@keyframes scan-indeterminate {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(310%);
+  }
+}
+
+:root {
+  color-scheme: dark;
+  font-family: "Geist Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --radius: 0.65rem;
+  --background: oklch(0.11 0.018 255);
+  --foreground: oklch(0.96 0.008 255);
+  --card: oklch(0.15 0.018 255);
+  --card-foreground: oklch(0.96 0.008 255);
+  --popover: oklch(0.16 0.018 255);
+  --popover-foreground: oklch(0.96 0.008 255);
+  --primary: oklch(0.82 0.14 205);
+  --primary-foreground: oklch(0.13 0.025 240);
+  --secondary: oklch(0.2 0.018 255);
+  --secondary-foreground: oklch(0.94 0.008 255);
+  --muted: oklch(0.2 0.016 255);
+  --muted-foreground: oklch(0.61 0.02 255);
+  --accent: oklch(0.23 0.023 248);
+  --accent-foreground: oklch(0.96 0.008 255);
+  --destructive: oklch(0.64 0.22 25);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 11%);
+  --ring: oklch(0.76 0.13 210);
+  --chart-1: oklch(0.76 0.15 207);
+  --chart-2: oklch(0.66 0.18 245);
+  --chart-3: oklch(0.7 0.17 285);
+  --chart-4: oklch(0.73 0.17 170);
+  --chart-5: oklch(0.78 0.15 120);
+}
+
+@theme inline {
+  --font-sans: "Geist Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html,
+  body,
+  #root {
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow: hidden;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: rgb(34 211 238 / 28%);
+  }
+
+  .tauri .app-titlebar {
+    padding-left: 6.25rem !important;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255 255 255 / 10%) transparent;
+  }
+}
