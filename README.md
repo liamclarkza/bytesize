@@ -4,6 +4,12 @@ A fast, visual disk-space analyzer for macOS. Scan any folder or volume, explore
 
 Built with [Tauri v2](https://v2.tauri.app/), Rust, React and TypeScript.
 
+![Bytesize results view showing a sunburst chart of a home folder](docs/screenshots/results.png)
+
+| Choose a folder or volume | Scan progress |
+| --- | --- |
+| ![Start screen](docs/screenshots/start.png) | ![Scanning screen](docs/screenshots/scanning.png) |
+
 ## Requirements
 
 - macOS
